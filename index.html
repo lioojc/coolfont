@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas文字特效</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+		#cool{
+			width: 677px;
+			height: 195px;
+			margin: 100px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="cool">
+		<canvas id="coolfont"></canvas>
+	</div>
+	<script src="https://s.ssl.qhmsg.com/lib/jquery/183.js"></script>
+	<script src="./coolfont.js"></script>
+	<script>
+		var config = {
+			el: document.getElementById("cool"),
+			canvas: document.getElementById("coolfont"),
+			imgUrl: "http://p1.qhimg.com/d/inn/0b033eba/logo.png",
+			imgW: 677,
+			imgH: 195,
+			cW: 677,
+			cH: 195
+		};
+		coolfont(config);
+	</script>
+</body>
+</html>
